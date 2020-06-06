@@ -1,0 +1,329 @@
+
+*** Running vivado
+    with args -log design_1_stream_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_stream_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_stream_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/ip_repo/stream_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.cache/ip 
+Command: synth_design -top design_1_stream_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 395.793 ; gain = 103.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_stream_0_0' [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ip/design_1_stream_0_0/synth/design_1_stream_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'stream_v1_0' [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:47]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SobelY' [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:3]
+	Parameter WIDTH bound to: 695 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element bfr_reg[0] was removed.  [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'SobelY' (1#1) [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:3]
+WARNING: [Synth 8-6014] Unused sequential element stream_input_reg_reg was removed.  [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'stream_v1_0' (2#1) [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ipshared/42d8/hdl/stream_v1_0.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_stream_0_0' (3#1) [c:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.srcs/sources_1/bd/design_1/ip/design_1_stream_0_0/synth/design_1_stream_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 483.809 ; gain = 191.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 483.809 ; gain = 191.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 483.809 ; gain = 191.715
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 893.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 893.734 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 909.379 ; gain = 15.645
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1395  
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SobelY 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1394  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module stream_v1_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/inst_1/pix_out_reg[29]' (FD) to 'inst/inst_1/pix_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_1/pix_out_reg[30]' (FD) to 'inst/inst_1/pix_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/m00_axis_tdata_reg_reg[29]' (FDR) to 'inst/m00_axis_tdata_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/m00_axis_tdata_reg_reg[30]' (FDR) to 'inst/m00_axis_tdata_reg_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:30 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:26 ; elapsed = 00:03:53 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:30 ; elapsed = 00:03:58 . Memory (MB): peak = 909.379 ; gain = 617.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:36 ; elapsed = 00:04:05 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_stream_0_0 | inst/inst_1/bfr_reg[1390][31] | 1388   | 32    | NO           | NO                 | YES               | 0      | 1408    | 
++--------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    38|
+|2     |LUT1    |     3|
+|3     |LUT2    |    35|
+|4     |LUT3    |    88|
+|5     |LUT4    |    59|
+|6     |LUT6    |     2|
+|7     |SRLC32E |  1408|
+|8     |FDRE    |   255|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------+------------+------+
+|      |Instance   |Module      |Cells |
++------+-----------+------------+------+
+|1     |top        |            |  1888|
+|2     |  inst     |stream_v1_0 |  1888|
+|3     |    inst_1 |SobelY      |  1853|
++------+-----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:39 ; elapsed = 00:04:08 . Memory (MB): peak = 921.137 ; gain = 629.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:59 ; elapsed = 00:03:39 . Memory (MB): peak = 921.137 ; gain = 203.473
+Synthesis Optimization Complete : Time (s): cpu = 00:03:39 ; elapsed = 00:04:09 . Memory (MB): peak = 921.137 ; gain = 629.043
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_stream_0_0' is not ideal for floorplanning, since the cellview 'SobelY' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 921.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:43 ; elapsed = 00:04:14 . Memory (MB): peak = 921.137 ; gain = 634.598
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 921.137 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.runs/design_1_stream_0_0_synth_1/design_1_stream_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_stream_0_0, cache-ID = c9b8ed1e7a61a5cf
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 921.137 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Clarke/Desktop/Hardware-Software Interface/FinalProject/stream_AXIS_Y/stream_AXIS_Y.runs/design_1_stream_0_0_synth_1/design_1_stream_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_stream_0_0_utilization_synth.rpt -pb design_1_stream_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  6 17:34:45 2020...
